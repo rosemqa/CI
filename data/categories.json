@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /root/.cache/selenium/chrome/linux64/125.0.6422.60/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/root/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'",
       "children" : [ {
         "name" : "Change profile name",
-        "uid" : "95b9ddccfd6f8124",
-        "parentUid" : "abe6ec87a603789d87fc2a48dd2c760c",
+        "uid" : "69815c8b52d6b0b6",
+        "parentUid" : "fb551c6128c92669353c823798d95bca",
         "status" : "broken",
         "time" : {
-          "start" : 1715978701280,
-          "stop" : 1715978701280,
+          "start" : 1715979718013,
+          "stop" : 1715979718013,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "abe6ec87a603789d87fc2a48dd2c760c"
+      "uid" : "fb551c6128c92669353c823798d95bca"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
