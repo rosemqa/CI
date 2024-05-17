@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "963bd1a292592cec",
+      "uid" : "a757dfcce1acde8c",
       "status" : "broken",
-      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '/root/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /root/.cache/selenium/chrome/linux64/125.0.6422.60/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
       "time" : {
-        "start" : 1715982092772,
-        "stop" : 1715982092772,
+        "start" : 1715982266717,
+        "stop" : 1715982266717,
         "duration" : 0
       }
     } ]
