@@ -28,7 +28,12 @@
 #RUN pip3 install -r requirements.txt
 #
 
-FROM python
+FROM python:3.12.0a4-alpine3.17
+
+# update apk repo
+RUN echo "https://dl-4.alpinelinux.org/alpine/v3.17/main" >> /etc/apk/repositories && \
+    echo "https://dl-4.alpinelinux.org/alpine/v3.17/community" >> /etc/apk/repositories
+
 
 RUN apk update && \
     apk add openjdk11-jre curl tar && \
@@ -36,6 +41,7 @@ RUN apk update && \
     tar -zxvf allure-2.13.8.tgz -C /opt/ && \
     ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure && \
     rm allure-2.13.8.tgz
+
 WORKDIR /test_project
 COPY requirements.txt .
 RUN pip install -r requirements.txt
