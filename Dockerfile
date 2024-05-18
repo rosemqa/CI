@@ -28,10 +28,7 @@
 #RUN pip3 install -r requirements.txt
 #
 
-FROM python:3.12.0a4-alpine3.17
-
-RUN echo "https://dl-4.alpinelinux.org/alpine/v3.10/main" >> /etc/apk/repositories && \
-    echo "https://dl-4.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories
+FROM python
 
 RUN apk update && \
     apk add openjdk11-jre curl tar && \
