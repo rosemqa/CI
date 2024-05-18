@@ -32,4 +32,4 @@ FROM python
 WORKDIR /test_project
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-CMD /bin/sh -c "ls -la && python -m pytest --alluredir=test_results_docker/'
+CMD python -m pytest --alluredir=test_results_docker/
