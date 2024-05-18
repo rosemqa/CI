@@ -1,12 +1,12 @@
 {
-  "uid" : "78342345ca006d60",
+  "uid" : "e65ef117b512bacf",
   "name" : "Change profile name",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
   "historyId" : "42b4a115007c35c622675a0baedb491a",
   "time" : {
-    "start" : 1716062814963,
-    "stop" : 1716062820142,
-    "duration" : 5179
+    "start" : 1716071423869,
+    "stop" : 1716071429162,
+    "duration" : 5293
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1716062814962,
-      "stop" : 1716062814962,
+      "start" : 1716071423868,
+      "stop" : 1716071423868,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,9 +29,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1716062814502,
-      "stop" : 1716062814962,
-      "duration" : 460
+      "start" : 1716071423376,
+      "stop" : 1716071423868,
+      "duration" : 492
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login page",
       "time" : {
-        "start" : 1716062814963,
-        "stop" : 1716062816338,
-        "duration" : 1375
+        "start" : 1716071423869,
+        "stop" : 1716071425270,
+        "duration" : 1401
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1716062816339,
-        "stop" : 1716062817432,
-        "duration" : 1093
+        "start" : 1716071425270,
+        "stop" : 1716071426364,
+        "duration" : 1094
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1716062817432,
-        "stop" : 1716062817510,
-        "duration" : 78
+        "start" : 1716071426364,
+        "stop" : 1716071426445,
+        "duration" : 81
       },
       "status" : "passed",
       "steps" : [ ],
@@ -98,9 +98,9 @@
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1716062817510,
-        "stop" : 1716062817572,
-        "duration" : 62
+        "start" : 1716071426446,
+        "stop" : 1716071426516,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -113,9 +113,9 @@
     }, {
       "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index is opened",
       "time" : {
-        "start" : 1716062817572,
-        "stop" : 1716062818454,
-        "duration" : 882
+        "start" : 1716071426516,
+        "stop" : 1716071427481,
+        "duration" : 965
       },
       "status" : "passed",
       "steps" : [ ],
@@ -128,9 +128,9 @@
     }, {
       "name" : "Click on 'My Info' link",
       "time" : {
-        "start" : 1716062818454,
-        "stop" : 1716062820135,
-        "duration" : 1681
+        "start" : 1716071427482,
+        "stop" : 1716071429155,
+        "duration" : 1673
       },
       "status" : "passed",
       "steps" : [ ],
@@ -143,9 +143,9 @@
     }, {
       "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7 is opened",
       "time" : {
-        "start" : 1716062820135,
-        "stop" : 1716062820141,
-        "duration" : 6
+        "start" : 1716071429155,
+        "stop" : 1716071429162,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ ],
@@ -166,9 +166,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1716062820142,
-      "stop" : 1716062820222,
-      "duration" : 80
+      "start" : 1716071429162,
+      "stop" : 1716071429244,
+      "duration" : 82
     },
     "status" : "passed",
     "steps" : [ ],
@@ -196,7 +196,7 @@
     "value" : "TestProfileFeature"
   }, {
     "name" : "host",
-    "value" : "fv-az1538-295"
+    "value" : "fv-az700-747"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -223,6 +223,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "78342345ca006d60.json",
+  "source" : "e65ef117b512bacf.json",
   "parameterValues" : [ ]
 }
