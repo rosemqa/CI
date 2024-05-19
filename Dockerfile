@@ -28,11 +28,11 @@
 #RUN pip3 install -r requirements.txt
 #
 
-FROM python:3.12.0a4-alpine3.17
+FROM python:3.12.3-alpine3.19
 
 # update apk repo
-RUN echo "https://dl-4.alpinelinux.org/alpine/v3.17/main" >> /etc/apk/repositories && \
-    echo "https://dl-4.alpinelinux.org/alpine/v3.17/community" >> /etc/apk/repositories
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/main" >> /etc/apk/repositories && \
+    echo "https://dl-cdn.alpinelinux.org/alpine/latest-stable/community" >> /etc/apk/repositories
 
 
 RUN apk update && \
