@@ -47,3 +47,6 @@ services:
     network_mode: 'host'
     volumes:
       - .:/test_project
+    environment:
+      - LOGIN=${LOGIN}
+      - PASSWORD=${PASSWORD}

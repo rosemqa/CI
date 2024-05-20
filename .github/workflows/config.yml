@@ -16,9 +16,9 @@ jobs:
 #          path: ./.github/gh-pages
 
       - name: Run UI-tests via docker-compose
-#        env:
-#          LOGIN: ${{ secrets.LOGIN }}
-#          PASSWORD: ${{ secrets.PASSWORD }}
+        env:
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           docker-compose up --exit-code-from regression || true
 
@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          # token: ${{ secrets.CI_TOKEN }}
+          token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-report
           clean: true
