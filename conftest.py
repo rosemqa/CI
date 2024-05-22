@@ -12,7 +12,6 @@ def driver(request):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
     driver = webdriver.Chrome(options=options)
-    # driver = webdriver.Remote('http://127.0.0.1:4444/wd/hub', options=options)
     request.cls.driver = driver
     yield driver
     driver.quit()

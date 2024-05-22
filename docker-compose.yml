@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   regression:
@@ -13,40 +13,3 @@ services:
     environment:
      - LOGIN=${LOGIN}
      - PASSWORD=${PASSWORD}
-
-
-#version: '3.8'
-#services:
-#  selenium_chrome:
-#    image: selenium/standalone-chrome
-#    container_name: selenium_server_chrome_works
-#    healthcheck:
-#      test: ["CMD", "curl", "-f", "http://127.0.0.1:4444"]
-#      interval: 3s
-#      timeout: 10s
-#      retries: 5
-#    shm_size: 2g
-##    environment:
-##      - VNC_NO_PASSWORD=1
-#    ports:
-#      - '4444:4444'
-#      - '7900:7900'
-#
-#
-#  regression:
-#    build: .
-#    depends_on:
-#      selenium_chrome:
-#        condition: service_healthy
-##      selenium_firefox:
-##        condition: service_healthy
-##      selenium_edge:
-##        condition: service_healthy
-#    image: pytest_selenium_runner
-#    container_name: pytest_selenium_runner_works
-#    network_mode: 'host'
-#    volumes:
-#      - .:/test_project
-#    environment:
-#      - LOGIN=${LOGIN}
-#      - PASSWORD=${PASSWORD}
