@@ -18,8 +18,8 @@ def driver(request):
     firefox_options.add_argument("--window-size=1920,1080")
 
     # driver = webdriver.Chrome(options=options)
-    # driver = webdriver.Remote('http://127.0.0.1:4444/wd/hub', options=options)
-    driver = webdriver.Remote('http://127.0.0.1:4440/wd/hub', options=firefox_options)
+    driver = webdriver.Remote('http://127.0.0.1:4444/wd/hub', options=options)
+    # driver = webdriver.Remote('http://127.0.0.1:4440/wd/hub', options=firefox_options)
     request.cls.driver = driver
     yield driver
     driver.quit()
