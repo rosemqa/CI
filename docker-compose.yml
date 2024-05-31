@@ -32,14 +32,29 @@ services:
       - '4444:4444'
       - '7900:7900'
 
+  selenium_firefox:
+    image: selenium/standalone-firefox
+    container_name: selenium_server_firefox_works
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://127.0.0.1:4440" ]
+      interval: 3s
+      timeout: 10s
+      retries: 5
+    shm_size: 2g
+    environment:
+      - VNC_NO_PASSWORD=1
+    ports:
+      - '4440:4444'
+      - '7901:7900'
+
 
   regression:
     build: .
     depends_on:
       selenium_chrome:
         condition: service_healthy
-#      selenium_firefox:
-#        condition: service_healthy
+      selenium_firefox:
+        condition: service_healthy
 #      selenium_edge:
 #        condition: service_healthy
     image: pytest_selenium_runner
@@ -47,6 +62,6 @@ services:
     network_mode: 'host'
     volumes:
       - .:/test_project
-    environment:
-      - LOGIN=${LOGIN}
-      - PASSWORD=${PASSWORD}
+#    environment:
+#      - LOGIN=${LOGIN}
+#      - PASSWORD=${PASSWORD}
