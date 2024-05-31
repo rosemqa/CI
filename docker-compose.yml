@@ -51,10 +51,10 @@ services:
   regression:
     build: .
     depends_on:
-#      selenium_chrome:
-#        condition: service_healthy
-      selenium_firefox:
+      selenium_chrome:
         condition: service_healthy
+#      selenium_firefox:
+#        condition: service_healthy
 #      selenium_edge:
 #        condition: service_healthy
     image: pytest_selenium_runner
