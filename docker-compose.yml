@@ -41,8 +41,8 @@ services:
       timeout: 10s
       retries: 5
     shm_size: 2g
-    environment:
-      - VNC_NO_PASSWORD=1
+#    environment:
+#      - VNC_NO_PASSWORD=1
     ports:
       - '4440:4444'
       - '7901:7900'
