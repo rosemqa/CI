@@ -38,7 +38,7 @@ services:
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://127.0.0.1:4440" ]
       interval: 3s
-      timeout: 15s
+      timeout: 10s
       retries: 5
     shm_size: 2g
 #    environment:
@@ -51,8 +51,8 @@ services:
   regression:
     build: .
     depends_on:
-      selenium_chrome:
-        condition: service_healthy
+#      selenium_chrome:
+#        condition: service_healthy
       selenium_firefox:
         condition: service_healthy
 #      selenium_edge:
