@@ -1,8 +1,8 @@
-FROM python:3.12.3-alpine3.19
+FROM python:3.12.3-alpine3.20
 
 # update apk repo
-RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.19/main" >> /etc/apk/repositories && \
-    echo "https://dl-cdn.alpinelinux.org/alpine/v3.19/community" >> /etc/apk/repositories
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.20/main" >> /etc/apk/repositories && \
+    echo "https://dl-cdn.alpinelinux.org/alpine/v3.20/community" >> /etc/apk/repositories
 
 # install packages (chromium, chromedriver, tzdata, jdk, curl, tar, allure)
 RUN apk update && \
