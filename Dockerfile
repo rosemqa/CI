@@ -6,7 +6,7 @@ RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.20/main" >> /etc/apk/reposito
 
 # install packages (chromium, chromedriver, tzdata, jdk, curl, tar, allure)
 RUN apk update && \
-    apk add --no-cache chromium chromium-chromedriver tzdata openjdk19-jre curl tar && \
+    apk add --no-cache chromium chromium-chromedriver tzdata openjdk21-jre curl tar && \
     curl -o allure-2.29.0.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.29.0/allure-commandline-2.29.0.tgz && \
     tar -zxvf allure-2.29.0.tgz -C /opt/ && \
     ln -s /opt/allure-2.29.0/bin/allure /usr/bin/allure && \
