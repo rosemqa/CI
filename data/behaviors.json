@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[{"name":"Profile Functionality","children":[{"name":"Change profile name","uid":"fb7f8eeebb175d52","parentUid":"bfe6fb5a25b9d3632e34c1e8a59f2830","status":"passed","time":{"start":1723753116134,"stop":1723753123235,"duration":7101},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]}],"uid":"bfe6fb5a25b9d3632e34c1e8a59f2830"}]}
+{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
