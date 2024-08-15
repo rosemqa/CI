@@ -15,4 +15,4 @@ RUN apk update && \
 WORKDIR /usr/workspace
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-CMD ["pytest", "-sv",  "--alluredir=allure-results"]
+# CMD ["pytest", "-sv",  "--alluredir=allure-results"]
