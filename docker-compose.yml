@@ -2,7 +2,7 @@
 
 services:
   regression:
-    image: python:3.12.3-alpine3.20
+    image: pythdddon:3.12.3-alpine3.20
     build:
       context: .
       dockerfile: Dockerfile
