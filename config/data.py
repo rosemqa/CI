@@ -1,10 +1,9 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 
 class Data:
-
-    LOGIN = os.getenv("LOGIN")    # "Admin"
-    PASSWORD = os.getenv("PASSWORD")     # "admin123"
+    LOGIN = "Admin"  # os.getenv("LOGIN")    # "Admin"
+    PASSWORD = "admin123"  # os.getenv("PASSWORD")     # "admin123"
