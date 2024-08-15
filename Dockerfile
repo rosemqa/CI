@@ -16,4 +16,4 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install -r requirements.txt
 
-CMD pytest -sv --alluredir=allure-results
+# CMD pytest -sv --alluredir=allure-results
