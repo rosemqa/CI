@@ -2,14 +2,13 @@
 
 services:
   regression:
-    # image: python:3.12.3-alpine3.20
+    image: python:3.12.3-alpine3.20
     build:
       context: .
       dockerfile: Dockerfile
-    image: python:3.12.3-alpine3.20
     volumes:
       - ./:/usr/workspace
-    command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results"
+    # command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results"
     working_dir: /usr/workspace
 #    environment:
 #     - LOGIN=${LOGIN}
